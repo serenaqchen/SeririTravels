@@ -9,10 +9,10 @@ articleRouter.get("/", async (request, response) => {
   response.json(articles);
 });
 
-// articleRouter.use(express.json());
-// articleRouter.post("/", async (request, response) => {
-//   const article = await db.addArticle(request.body.name);
-//   response.status(201).json(article);
-// });
+articleRouter.use(express.json());
+articleRouter.post("/", async (request, response) => {
+  const article = await db.addArticle(request.body);
+  response.status(201).json(article);
+});
 
 export default articleRouter;

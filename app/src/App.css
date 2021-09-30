@@ -7,5 +7,54 @@
   align-items: center;
 }
 
+#root{
+  background-color: white;
+}
+html{
+  background-color: white;
+}
+
+#TravelBlog img{
+  height: 400px;
+  width: auto;
+  color: #d7e8ec;
+}
+
+#home img{
+  height: 100vh;
+}
+
+#ArticleList{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+nav{
+  font-size: 22px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+a{
+  padding: 20px;
+  margin: 5px;
+}
+
+#otherRoutes a{
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+#otherRoutes a:hover{
+  border-radius: 20px ;
+  background-color: #FFCD00;
+}
+
 
 
